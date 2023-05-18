@@ -2,13 +2,18 @@
 <html>
   <head>
     <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
+
       .profile {
         width: 200px;
-        height: 325px;
+        height: 330px;
         display: inline-block;
         border: none;
         box-shadow: 0 0 5px rgb(185, 185, 185);
-        margin-right: 15px;
       }
 
       .picture {
@@ -18,58 +23,47 @@
       }
 
       .name {
-        font-size: 18px;
-        font-family: Arial;
-        font-weight: 700;
-        margin-top: 12px;
-        margin-left: 8px;
-        margin-bottom: 5px;
-      }
-
-      .mutual-friend-picture {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-left: 8px;
-        margin-bottom: 0;
-      }
-
-      .mutual-friend-text {
-        display: inline-block;
-        font-family: Arial;
-        font-size: 16px;
-        color: rgb(85, 85, 85);
-        margin-bottom: 0;
+        font-family: arial;
+        font-size: 22px;
+        font-weight: 600;
         margin-top: 0;
-        margin-left: 5px;
-      }
-
-      .add-friend-button {
-        border: none;
-        background-color: rgb(57, 123, 245);
-        color: white;
-        border-radius: 5px;
-        width: 117px;
-        height: 39px;
-        font-size: 16px;
+        margin-bottom: 0;
         margin-left: 8px;
-        display: block;
-        margin-top: 0;
       }
 
       .mutual-friend {
         display: flex;
         align-items: center;
-        margin-bottom: 5px;
-        margin-right: 5px;
       }
 
-      .grid {
-        display: grid;
-        grid-template-columns: 200px 200px 200px;
-        column-gap: 20px;
+      .mutual-friend-picture {
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        object-fit: cover;
+        margin-left: 8px;
+        display: inline-block;
+      }
+
+      .mutual-friend-text {
+        display: inline-block;
+        color: rgb(112, 112, 112);
+        font-family: Arial;
+        margin-left: 5px;
+        margin-bottom: 5px;
+      }
+
+      .add-friend-button {
+        background-color: rgb(38, 126, 233);
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        width: 120px;
+        margin-left: 8px;
+        color: white;
+        font-family: Arial;
+        font-size: 17px;
+        margin-top: 8px;
       }
     </style>
   </head>
